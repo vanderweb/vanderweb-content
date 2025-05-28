@@ -3,11 +3,11 @@
 /**
  * Fired during plugin activation
  *
- * @link       https://vander-web.com/
+ * @link       https://vander.dk/
  * @since      1.0.0
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
- * @author     Ulrik Vander <ulrik@vanderweb.com>
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
+ * @author     Ulrik Vander <ulrik@vander.dk>
  */
-class Vanderweb_Bs4_Accordion_Activator {
+class Vanderweb_Content_Activator {
 
 	/**
 	 * Short Description. (use period)
