@@ -6,11 +6,11 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       https://vander-web.com/
+ * @link       https://vander.dk/
  * @since      1.0.0
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
  */
 
 /**
@@ -23,9 +23,9 @@
  * version of the plugin.
  *
  * @since      1.0.1
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
- * @author     Ulrik Vander <ulrik@vanderweb.com>
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
+ * @author     Ulrik Vander <ulrik@vander.dk>
  */
 
 class Vanderweb_Accordion_Post_Types {
@@ -34,27 +34,27 @@ class Vanderweb_Accordion_Post_Types {
 	////////////////////////////////////////////////////////////////////
 	public function vw_accordion_post_types() {
 		$labels = array(
-			'name'               => __( 'Accordions', 'vanderweb-bs4-accordion' ),
-			'singular_name'      => __( 'Accordions', 'vanderweb-bs4-accordion' ),
-			'menu_name'          => __( 'Accordions', 'vanderweb-bs4-accordion' ),
-			'name_admin_bar'     => __( 'Accordions', 'vanderweb-bs4-accordion' ),
-			'add_new'            => __( 'Add new', 'vanderweb-bs4-accordion' ),
-			'add_new_item'       => __( 'Add new accordion item', 'vanderweb-bs4-accordion' ),
-			'new_item'           => __( 'New accordion item', 'vanderweb-bs4-accordion' ),
-			'edit_item'          => __( 'Edit accordion item', 'vanderweb-bs4-accordion' ),
-			'view_item'          => __( 'Show', 'vanderweb-bs4-accordion' ),
-			'all_items'          => __( 'Accordion items', 'vanderweb-bs4-accordion' ),
-			'search_items'       => __( 'Search accordion item', 'vanderweb-bs4-accordion' ),
-			'parent_item_colon'  => __( 'Parent accordion item:', 'vanderweb-bs4-accordion' ),
-			'not_found'          => __( 'No accordion items found.', 'vanderweb-bs4-accordion' ),
-			'not_found_in_trash' => __( 'No trashed accordion items found.', 'vanderweb-bs4-accordion' )
+			'name'               => __( 'Accordions', 'vanderweb-content' ),
+			'singular_name'      => __( 'Accordions', 'vanderweb-content' ),
+			'menu_name'          => __( 'Accordions', 'vanderweb-content' ),
+			'name_admin_bar'     => __( 'Accordions', 'vanderweb-content' ),
+			'add_new'            => __( 'Add new', 'vanderweb-content' ),
+			'add_new_item'       => __( 'Add new accordion item', 'vanderweb-content' ),
+			'new_item'           => __( 'New accordion item', 'vanderweb-content' ),
+			'edit_item'          => __( 'Edit accordion item', 'vanderweb-content' ),
+			'view_item'          => __( 'Show', 'vanderweb-content' ),
+			'all_items'          => __( 'Accordion items', 'vanderweb-content' ),
+			'search_items'       => __( 'Search accordion item', 'vanderweb-content' ),
+			'parent_item_colon'  => __( 'Parent accordion item:', 'vanderweb-content' ),
+			'not_found'          => __( 'No accordion items found.', 'vanderweb-content' ),
+			'not_found_in_trash' => __( 'No trashed accordion items found.', 'vanderweb-content' )
 		);
 
 		$args = array( 
 			'public'      => false, 
 			'labels'      => $labels,
 			'has_archive' => false,
-			'description' => __( 'Accordions', 'vanderweb-bs4-accordion' ),
+			'description' => __( 'Accordions', 'vanderweb-content' ),
 			'show_ui'	        => true,
 			'show_in_admin_bar' => true,
 			'menu_position' => 25.2,
@@ -71,21 +71,21 @@ class Vanderweb_Accordion_Post_Types {
 	////////////////////////////////////////////////////////////////////
 	public function create_vw_accordion_taxonomy() {
 		$labels = array(
-			'name'                           => __( 'Accordion - Sections', 'vanderweb-bs4-accordion' ),
-			'singular_name'                  => __( 'Accordion - Sections', 'vanderweb-bs4-accordion' ),
-			'search_items'                   => __( 'Search Sections', 'vanderweb-bs4-accordion' ),
-			'all_items'                      => __( 'All Sections', 'vanderweb-bs4-accordion' ),
-			'edit_item'                      => __( 'Edit Section', 'vanderweb-bs4-accordion' ),
-			'update_item'                    => __( 'Update Section', 'vanderweb-bs4-accordion' ),
-			'add_new_item'                   => __( 'Add new Section', 'vanderweb-bs4-accordion' ),
-			'new_item_name'                  => __( 'New Section Name', 'vanderweb-bs4-accordion' ),
-			'menu_name'                      => __( 'Sections', 'vanderweb-bs4-accordion' ),
-			'view_item'                      => __( 'Show Section', 'vanderweb-bs4-accordion' ),
-			'popular_items'                  => __( 'Popular Sections', 'vanderweb-bs4-accordion' ),
-			'separate_items_with_commas'     => __( 'Seperate Sections with commas', 'vanderweb-bs4-accordion' ),
-			'add_or_remove_items'            => __( 'Add or Remove Sections', 'vanderweb-bs4-accordion' ),
-			'choose_from_most_used'          => __( 'Select from the most used Sections', 'vanderweb-bs4-accordion' ),
-			'not_found'                      => __( 'No Sections found', 'vanderweb-bs4-accordion' )
+			'name'                           => __( 'Accordion - Sections', 'vanderweb-content' ),
+			'singular_name'                  => __( 'Accordion - Sections', 'vanderweb-content' ),
+			'search_items'                   => __( 'Search Sections', 'vanderweb-content' ),
+			'all_items'                      => __( 'All Sections', 'vanderweb-content' ),
+			'edit_item'                      => __( 'Edit Section', 'vanderweb-content' ),
+			'update_item'                    => __( 'Update Section', 'vanderweb-content' ),
+			'add_new_item'                   => __( 'Add new Section', 'vanderweb-content' ),
+			'new_item_name'                  => __( 'New Section Name', 'vanderweb-content' ),
+			'menu_name'                      => __( 'Sections', 'vanderweb-content' ),
+			'view_item'                      => __( 'Show Section', 'vanderweb-content' ),
+			'popular_items'                  => __( 'Popular Sections', 'vanderweb-content' ),
+			'separate_items_with_commas'     => __( 'Seperate Sections with commas', 'vanderweb-content' ),
+			'add_or_remove_items'            => __( 'Add or Remove Sections', 'vanderweb-content' ),
+			'choose_from_most_used'          => __( 'Select from the most used Sections', 'vanderweb-content' ),
+			'not_found'                      => __( 'No Sections found', 'vanderweb-content' )
 		);
 		$args = array(
 			'hierarchical' => true,

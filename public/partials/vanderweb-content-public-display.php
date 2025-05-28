@@ -5,11 +5,11 @@
  *
  * This file is used to markup the public-facing aspects of the plugin.
  *
- * @link       https://vander-web.com/
+ * @link       https://vander.dk/
  * @since      1.0.0
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/public/partials
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/public/partials
  */
 ?>
 

@@ -8,19 +8,19 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://vander-web.com/
+ * @link              https://vander.dk/
  * @since             1.0.0
- * @package           Vanderweb_Bs4_Accordion
+ * @package           Vanderweb_Content
  *
  * @wordpress-plugin
- * Plugin Name:       Accordions and Tabs by Vander Web
- * Description:       Add Accordions Section and Shortcodes.
+ * Plugin Name:       WordPress Utilities by Vander Web
+ * Description:       Add WordPress Utilities.
  * Version:           1.0.1
  * Author:            Ulrik Vander
- * Author URI:        https://vander-web.com/
+ * Author URI:        https://vander.dk/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       vanderweb-bs4-accordion
+ * Text Domain:       vanderweb-content
  * Domain Path:       /languages
  */
 
@@ -42,7 +42,7 @@ define( 'VANDERWEB_CONTENT_VERSION', '1.0.0' );
  */
 function activate_vanderweb_content() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-vanderweb-content-activator.php';
-	Vanderweb_Bs4_Accordion_Activator::activate();
+	Vanderweb_Content_Activator::activate();
 }
 
 /**
@@ -51,7 +51,7 @@ function activate_vanderweb_content() {
  */
 function deactivate_vanderweb_content() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-vanderweb-content-deactivator.php';
-	Vanderweb_Bs4_Accordion_Deactivator::deactivate();
+	Vanderweb_Content_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_vanderweb_content' );

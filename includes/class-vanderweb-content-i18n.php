@@ -6,11 +6,11 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       https://vander-web.com/
+ * @link       https://vander.dk/
  * @since      1.0.0
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
- * @author     Ulrik Vander <ulrik@vanderweb.com>
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
+ * @author     Ulrik Vander <ulrik@vander.dk>
  */
-class Vanderweb_Bs4_Accordion_i18n {
+class Vanderweb_Content_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Vanderweb_Bs4_Accordion_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'vanderweb-bs4-accordion',
+			'vanderweb-content',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

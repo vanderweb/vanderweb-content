@@ -3,11 +3,11 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       https://vander-web.com/
+ * @link       https://vander.dk/
  * @since      1.0.0
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
- * @author     Ulrik Vander <ulrik@vanderweb.com>
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
+ * @author     Ulrik Vander <ulrik@vander.dk>
  */
-class Vanderweb_Bs4_Accordion_Loader {
+class Vanderweb_Content_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

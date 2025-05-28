@@ -3,11 +3,11 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://vander-web.com/
+ * @link       https://vander.dk/
  * @since      1.0.0
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/public
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/public
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/public
- * @author     Ulrik Vander <ulrik@vanderweb.com>
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/public
+ * @author     Ulrik Vander <ulrik@vander.dk>
  */
-class Vanderweb_Bs4_Accordion_Public {
+class Vanderweb_Content_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -65,10 +65,10 @@ class Vanderweb_Bs4_Accordion_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Vanderweb_Bs4_Accordion_Loader as all of the hooks are defined
+		 * defined in Vanderweb_Content_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Vanderweb_Bs4_Accordion_Loader will then create the relationship
+		 * The Vanderweb_Content_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -76,7 +76,7 @@ class Vanderweb_Bs4_Accordion_Public {
 		$load_bootstrap_4_6_from_the_plugin_0 = $vanderweb_accordions_shortcodes_options['load_bootstrap_4_6_from_the_plugin_0'];
 		$load_bootstrap_icons_1_2_from_the_plugin_1 = $vanderweb_accordions_shortcodes_options['load_bootstrap_icons_1_2_from_the_plugin_1'];
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/vanderweb-bs4-accordion-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/vanderweb-content-public.css', array(), $this->version, 'all' );
 
 		if($load_bootstrap_4_6_from_the_plugin_0 == 'true'):
 			wp_enqueue_style('bootstrap4', plugin_dir_url( __FILE__ ) . 'css/bootstrap.min.css', array(), '4.6', 'all' );		
@@ -97,17 +97,17 @@ class Vanderweb_Bs4_Accordion_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Vanderweb_Bs4_Accordion_Loader as all of the hooks are defined
+		 * defined in Vanderweb_Content_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Vanderweb_Bs4_Accordion_Loader will then create the relationship
+		 * The Vanderweb_Content_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-		$vanderweb_accordions_shortcodes_options = get_option( 'vanderweb_accordions_shortcodes_option_name' );
+		$vanderweb_content_shortcodes_options = get_option( 'vanderweb_content_shortcodes_option_name' );
 		$load_bootstrap_4_6_from_the_plugin_0 = $vanderweb_accordions_shortcodes_options['load_bootstrap_4_6_from_the_plugin_0'];
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/vanderweb-bs4-accordion-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/vanderweb-content-public.js', array( 'jquery' ), $this->version, false );
 		
 		if($load_bootstrap_4_6_from_the_plugin_0 == 'true'):
 			wp_enqueue_script( 'Bootstrap4', plugin_dir_url( __FILE__ ) . 'js/bootstrap.bundle.min.js', array( 'jquery' ), '4.6', false );
@@ -155,10 +155,10 @@ class Vanderweb_Bs4_Accordion_Public {
 			ob_start(); 
 			?>
 			<style>
-				.vanderweb-bs4-accordions.icons-left .card-header span {
+				.vanderweb-content.icons-left .card-header span {
 					padding-left: 6px;
 				}
-				.vanderweb-bs4-accordions.icons-none .card-header i {
+				.vanderweb-content.icons-none .card-header i {
 					display: none !important;
 				}
 			</style>
@@ -179,7 +179,7 @@ class Vanderweb_Bs4_Accordion_Public {
 			</script>
 			<?php
 			$accordionhtml .= ob_get_clean();
-			$accordionhtml .= '<div id="vanderweb-bs4-accordions-'.$slug.'" class="accordion vanderweb-bs4-accordions icons-'.$icons.' '.$class.' item-total-'.$item_count.'">';
+			$accordionhtml .= '<div id="vanderweb-content-'.$slug.'" class="accordion vanderweb-content icons-'.$icons.' '.$class.' item-total-'.$item_count.'">';
 			while( $accordion_loop->have_posts() ){
 				$accordion_loop->the_post();
 				$title = get_the_title();
@@ -209,7 +209,7 @@ class Vanderweb_Bs4_Accordion_Public {
 						$accordionhtml .= '</h2>'; // .card-title
 					$accordionhtml .= '</div>'; // .card-header
 				
-					$accordionhtml .= '<div id="collapse-'.$slug.'-'.$i.'" class="collapse '.$showitem.'" aria-labelledby="heading-'.$slug.'-'.$i.'" data-parent="#vanderweb-bs4-accordions-'.$slug.'">';
+					$accordionhtml .= '<div id="collapse-'.$slug.'-'.$i.'" class="collapse '.$showitem.'" aria-labelledby="heading-'.$slug.'-'.$i.'" data-parent="#vanderweb-content-'.$slug.'">';
 						$accordionhtml .= '<div class="card-body">';
 							$accordionhtml .= $desc;
 						$accordionhtml .= '</div>'; // .card-body
@@ -220,7 +220,7 @@ class Vanderweb_Bs4_Accordion_Public {
 			}
 			wp_reset_query();
 			wp_reset_postdata();
-			$accordionhtml .= '</div>'; // .vanderweb-accordion-bs4-inner
+			$accordionhtml .= '</div>'; // .vanderweb-content-inner
 			
 		endif;
 	 
@@ -263,7 +263,7 @@ class Vanderweb_Bs4_Accordion_Public {
 		$item_count = $tabs_loop->found_posts;
 	 
 		if ( $tabs_loop->have_posts() ):
-			$tabshtml .= '<div class="vanderweb-bs4-tabs '.$class.' item-total-'.$item_count.'">';
+			$tabshtml .= '<div class="vanderweb-content-tabs '.$class.' item-total-'.$item_count.'">';
 				while( $tabs_loop->have_posts() ){
 					$tabs_loop->the_post();
 					$title = get_the_title();
@@ -290,15 +290,15 @@ class Vanderweb_Bs4_Accordion_Public {
 					// Item - End
 					$i++;
 				}
-				$tabshtml .= '<ul class="nav nav-tabs m-0" id="vanderweb-bs4-tabs-'.$slug.'" role="tablist">';
+				$tabshtml .= '<ul class="nav nav-tabs m-0" id="vanderweb-content-tabs-'.$slug.'" role="tablist">';
 					$tabshtml .= $tabsnav;
 				$tabshtml .= '</ul>'; // .nav-tabs
-				$tabshtml .= '<div class="tab-content" id="vanderweb-bs4-content-'.$slug.'">';
+				$tabshtml .= '<div class="tab-content" id="vanderweb-content-'.$slug.'">';
 					$tabshtml .= $tabscontent;
 				$tabshtml .= '</div>'; // .tab-content
 				wp_reset_query();
 				wp_reset_postdata();
-			$tabshtml .= '</div>'; // .vanderweb-bs4-tabs
+			$tabshtml .= '</div>'; // .vanderweb-content-tabs
 		endif;
 	 
 		return $tabshtml;

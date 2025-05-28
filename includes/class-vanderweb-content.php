@@ -6,11 +6,11 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       https://vander-web.com/
+ * @link       https://vander.dk/
  * @since      1.0.0
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/includes
- * @author     Ulrik Vander <ulrik@vanderweb.com>
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/includes
+ * @author     Ulrik Vander <ulrik@vander.dk>
  */
-class Vanderweb_Bs4_Accordion {
+class Vanderweb_Content {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Vanderweb_Bs4_Accordion {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Vanderweb_Bs4_Accordion_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Vanderweb_Content_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -67,12 +67,12 @@ class Vanderweb_Bs4_Accordion {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'VANDERWEB_BS4_ACCORDION_VERSION' ) ) {
-			$this->version = VANDERWEB_BS4_ACCORDION_VERSION;
+		if ( defined( 'VANDERWEB_CONTENT_VERSION' ) ) {
+			$this->version = VANDERWEB_CONTENT_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'vanderweb-bs4-accordion';
+		$this->plugin_name = 'vanderweb-content';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -86,10 +86,10 @@ class Vanderweb_Bs4_Accordion {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Vanderweb_Bs4_Accordion_Loader. Orchestrates the hooks of the plugin.
-	 * - Vanderweb_Bs4_Accordion_i18n. Defines internationalization functionality.
-	 * - Vanderweb_Bs4_Accordion_Admin. Defines all hooks for the admin area.
-	 * - Vanderweb_Bs4_Accordion_Public. Defines all hooks for the public side of the site.
+	 * - Vanderweb_Content_Loader. Orchestrates the hooks of the plugin.
+	 * - Vanderweb_Content_i18n. Defines internationalization functionality.
+	 * - Vanderweb_Content_Admin. Defines all hooks for the admin area.
+	 * - Vanderweb_Content_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -103,38 +103,38 @@ class Vanderweb_Bs4_Accordion {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-vanderweb-bs4-accordion-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-vanderweb-content-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-vanderweb-bs4-accordion-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-vanderweb-content-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-vanderweb-bs4-accordion-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-vanderweb-content-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-vanderweb-bs4-accordion-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-vanderweb-content-public.php';
 		
 		/**
 		 * Custom Post Types
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-vanderweb-bs4-accordion-posttypes.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-vanderweb-content-posttypes.php';
 
-		$this->loader = new Vanderweb_Bs4_Accordion_Loader();
+		$this->loader = new Vanderweb_Content_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Vanderweb_Bs4_Accordion_i18n class in order to set the domain and to register the hook
+	 * Uses the Vanderweb_Content_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -142,7 +142,7 @@ class Vanderweb_Bs4_Accordion {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Vanderweb_Bs4_Accordion_i18n();
+		$plugin_i18n = new Vanderweb_Content_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -157,7 +157,7 @@ class Vanderweb_Bs4_Accordion {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Vanderweb_Bs4_Accordion_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Vanderweb_Content_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -181,7 +181,7 @@ class Vanderweb_Bs4_Accordion {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Vanderweb_Bs4_Accordion_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Vanderweb_Content_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -222,7 +222,7 @@ class Vanderweb_Bs4_Accordion {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Vanderweb_Bs4_Accordion_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Vanderweb_Content_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

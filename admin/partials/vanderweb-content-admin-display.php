@@ -8,8 +8,8 @@
  * @link       https://vander-web.com/
  * @since      1.0.0
  *
- * @package    Vanderweb_Bs4_Accordion
- * @subpackage Vanderweb_Bs4_Accordion/admin/partials
+ * @package    Vanderweb_Content
+ * @subpackage Vanderweb_Content/admin/partials
  */
  
 //get our global options
