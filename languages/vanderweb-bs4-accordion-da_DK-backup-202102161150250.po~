@@ -1,0 +1,208 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bootstrap 4 Accordions and Tabs by Vander Web\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-16 11:36+0000\n"
+"PO-Revision-Date: 2021-02-16 11:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: Dansk\n"
+"Language: da_DK\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.6.1\n"
+"X-Domain: vanderweb-bs4-accordion"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:74
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:75
+msgid "Accordion - Sections"
+msgstr "Accordion - Sektioner"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:46
+msgid "Accordion items"
+msgstr "Accordion enheder"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:37
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:38
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:39
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:40
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:57
+msgid "Accordions"
+msgstr "Accordions"
+
+#: admin/class-vanderweb-bs4-accordion-admin.php:129
+#: admin/partials/vanderweb-bs4-accordion-admin-display.php:36
+msgid "Accordions - Shortcodes"
+msgstr "Accordions - Shortcodes"
+
+#: admin/partials/vanderweb-bs4-accordion-admin-display.php:40
+msgid "Accordions:"
+msgstr "Accordions:"
+
+#. Description of the plugin
+msgid "Add Accordions Section and Shortcodes."
+msgstr "Tilføj Accordions Sektion og Shortcodes."
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:41
+msgid "Add new"
+msgstr "Tilføj ny"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:42
+msgid "Add new accordion item"
+msgstr "Tilføj ny"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:80
+msgid "Add new Section"
+msgstr "Tilføj ny Sektion"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:86
+msgid "Add or Remove Sections"
+msgstr "Tilføj eller fjern Sektion"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:77
+msgid "All Sections"
+msgstr "Alle Sektioner"
+
+#. Name of the plugin
+msgid "Bootstrap 4 Accordions and Tabs by Vander Web"
+msgstr "Bootstrap 4 Accordions og Tabs af Vander Web"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:44
+msgid "Edit accordion item"
+msgstr "Rediger accordion"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:78
+msgid "Edit Section"
+msgstr "Rediger Sektion"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://vander-web.com/"
+msgstr "https://vander-web.com/"
+
+#: admin/class-vanderweb-bs4-accordion-admin.php:194
+msgid ""
+"If your current theme loads Bootstrap 4.6 and Bootstrap Icons 1.2, then set "
+"options to \"No\"."
+msgstr ""
+"Hvis dit nuværende tema indlæser Bootstrap 4.6 og Bootstrap Icons 1.2, så "
+"sæt indstillingen til \"Nej\"."
+
+#. id
+#: admin/class-vanderweb-bs4-accordion-admin.php:163
+msgid "Load Bootstrap 4.6 from the plugin"
+msgstr "Indlæs Bootstrap 4.6 fra dette plugin"
+
+#. id
+#: admin/class-vanderweb-bs4-accordion-admin.php:171
+msgid "Load Bootstrap Icons 1.2 from the plugin"
+msgstr "Indlæs Bootstrap Icons 1.2 fra dette plugin"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:43
+msgid "New accordion item"
+msgstr "Ny accordion"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:81
+msgid "New Section Name"
+msgstr "Ny Sektion Navn"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:49
+msgid "No accordion items found."
+msgstr "Ingen accordions fundet"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:88
+msgid "No Sections found"
+msgstr "Ingen Sektioner fundet"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:50
+msgid "No trashed accordion items found."
+msgstr "Ingen accordions fundet i papirkurven"
+
+#: admin/class-vanderweb-bs4-accordion-admin.php:203
+msgid "No, load Bootstrap 4.6 from your theme"
+msgstr "Nej, indlæs Bootstrap 4.6 fra dit tema"
+
+#: admin/class-vanderweb-bs4-accordion-admin.php:210
+msgid "No, load Bootstrap Icons 1.2 from your theme"
+msgstr "Nej, indlæs Bootstrap Icons 1.2 fra dit tema"
+
+#: admin/class-vanderweb-bs4-accordion-admin.php:195
+msgid "Otherwise change the settings to load from this plugin."
+msgstr "Ellers sæt indstillinger til at indlæse fra dette plugin-"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:48
+msgid "Parent accordion item:"
+msgstr "Hoved accordion"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:84
+msgid "Popular Sections"
+msgstr "Populær Sektioner"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:47
+msgid "Search accordion item"
+msgstr "Søg accordion"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:76
+msgid "Search Sections"
+msgstr "Søg Sektion"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:82
+msgid "Sections"
+msgstr "Sektioner"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:87
+msgid "Select from the most used Sections"
+msgstr "Vælg fra den mest brugte Sektion"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:85
+msgid "Seperate Sections with commas"
+msgstr "Adskil Sektioner med komma"
+
+#. id
+#: admin/class-vanderweb-bs4-accordion-admin.php:156
+msgid "Settings:"
+msgstr "Indstillinger:"
+
+#: admin/partials/vanderweb-bs4-accordion-admin-display.php:42
+#: admin/partials/vanderweb-bs4-accordion-admin-display.php:53
+msgid "Shortcode attributes:"
+msgstr "Shortcode attributer:"
+
+#: admin/class-vanderweb-bs4-accordion-admin.php:130
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:45
+msgid "Show"
+msgstr "Vis"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:83
+msgid "Show Section"
+msgstr "Vis Sektion"
+
+#: admin/partials/vanderweb-bs4-accordion-admin-display.php:51
+msgid "Tabs:"
+msgstr "Tabs:"
+
+#: admin/class-vanderweb-bs4-accordion-admin.php:193
+msgid ""
+"These Shortcodes require that Bootstrap 4.6 and Bootstrap Icons 1.2 is "
+"loaded to work."
+msgstr ""
+"Denne Shortcode kræver at Bootstrap 4.6 og Bootstrap Icons 1.2 bliver "
+"indlæst for at virke."
+
+#. Author of the plugin
+msgid "Ulrik Vander"
+msgstr "Ulrik Vander"
+
+#: includes/class-vanderweb-bs4-accordion-posttypes.php:79
+msgid "Update Section"
+msgstr "Opdater Sektion"
+
+#: admin/class-vanderweb-bs4-accordion-admin.php:201
+#: admin/class-vanderweb-bs4-accordion-admin.php:208
+msgid "Yes"
+msgstr "Ja"
