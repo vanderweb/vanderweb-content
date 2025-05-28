@@ -33,13 +33,13 @@
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 <div class="wrap">
-    <h2><?php echo __( 'Accordions - Shortcodes', 'vanderweb-bs4-accordion' ); ?></h2>
+    <h2><?php echo __( 'Accordions - Shortcodes', 'vanderweb-content' ); ?></h2>
 	<p></p>
 	<?php settings_errors(); ?>
 	<hr />
-	<h3><?php echo __( 'Accordions:', 'vanderweb-bs4-accordion' ); ?></h3>
+	<h3><?php echo __( 'Accordions:', 'vanderweb-content' ); ?></h3>
 	<p><?php echo $accordions; ?></p>
-	<p><b><?php echo __( 'Shortcode attributes:', 'vanderweb-bs4-accordion' ); ?></b></p>
+	<p><b><?php echo __( 'Shortcode attributes:', 'vanderweb-content' ); ?></b></p>
 	<p>slug="<i>your-section-slug</i>"</p>
 	<p>class=""</p>
 	<p>count="50"</p>
@@ -48,9 +48,9 @@
 	<p>open="first" <br />( first, all, none )</p>
 	<p>icons="right" <br />( right, left, none )</p>
 	<hr />
-	<h3><?php echo __( 'Tabs:', 'vanderweb-bs4-accordion' ); ?></h3>
+	<h3><?php echo __( 'Tabs:', 'vanderweb-content' ); ?></h3>
 	<p><?php echo $tabs; ?></p>
-	<p><b><?php echo __( 'Shortcode attributes:', 'vanderweb-bs4-accordion' ); ?></b></p>
+	<p><b><?php echo __( 'Shortcode attributes:', 'vanderweb-content' ); ?></b></p>
 	<p>slug="<i>your-section-slug</i>"</p>
 	<p>class=""</p>
 	<p>count="50"</p>
@@ -59,8 +59,8 @@
 	<br /><hr />
 	<form method="post" action="options.php">
 		<?php
-			settings_fields( 'vanderweb_accordions_shortcodes_option_group' );
-			do_settings_sections( 'vanderweb-accordions-shortcodes-admin' );
+			settings_fields( 'vanderweb_content_shortcodes_option_group' );
+			do_settings_sections( 'vanderweb-content-shortcodes-admin' );
 			submit_button();
 		?>
 	</form>
