@@ -125,7 +125,7 @@ class Vanderweb_Content_Admin {
 		//add_submenu_page( 'plugins.php', 'Plugin settings page title', 'Admin area menu slug', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page' ) );
 
 		add_submenu_page(
-			'edit.php?post_type=vanderweb_content',
+			'edit.php?post_type=vanderweb_accordions',
 			__( 'content - Shortcodes', 'vanderweb-content' ),
 			__( 'Shortcodes', 'vanderweb-content' ),
 			'manage_options',
